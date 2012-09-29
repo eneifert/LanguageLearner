@@ -1,0 +1,57 @@
+CREATE TABLE [Card] (
+    [ID] int PRIMARY KEY NOT NULL,
+    [Question] text NOT NULL,
+    [Answer] text NOT NULL,
+    [Notes] text NOT NULL,
+    [Count] int NOT NULL,
+    [DateCreated] datetime NOT NULL,
+    [LastModified] datetime NOT NULL,
+    [MarkForReview] boolean DEFAULT '0',
+    [Difficulty] int DEFAULT '0'
+);
+
+CREATE TABLE [CardList] (
+[ID] int  PRIMARY KEY NOT NULL,
+[CollectionID] int  NOT NULL,
+[Name] text  NOT NULL,
+[DateCreated] datetime  NOT NULL,
+[LastModified] datetime  NOT NULL
+);
+
+CREATE TABLE [CardListData] (
+[ID] int  PRIMARY KEY NOT NULL,
+[CardListID] int  NOT NULL,
+[CardID] int  NOT NULL,
+[Index] int  NOT NULL
+);
+
+CREATE TABLE [Collection] (
+    [ID] int PRIMARY KEY NOT NULL,
+    [Name] text NOT NULL,
+    [DateCreated] datetime NOT NULL,
+    [LastModified] datetime NOT NULL,
+    [CanEdit] boolean NOT NULL
+);
+
+CREATE TABLE [Dictionary] (
+    [ID] int NOT NULL,
+    [Name] text NOT NULL,
+    [Alphabet] text NOT NULL,
+    [Column] text NOT NULL
+);
+
+CREATE TABLE [RecentPlaylist] (
+    [ID] int PRIMARY KEY NOT NULL,
+    [Name] text NOT NULL,
+    [CardIDs] text NOT NULL,
+    [Index] int NOT NULL
+);
+
+CREATE TABLE [SoundClip] (
+    [ID] int PRIMARY KEY NOT NULL,
+    [Name] text,
+    [SoundClip] blob,
+    [DateCreated] datetime NOT NULL,
+    [LastModified] datetime NOT NULL,
+    [CardID] int NOT NULL UNIQUE
+);

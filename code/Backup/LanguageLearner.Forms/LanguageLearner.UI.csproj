@@ -1,0 +1,433 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3B34CA9-BDEE-46A4-B46E-7F96842B0066}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LanguageLearner.UI</RootNamespace>
+    <AssemblyName>LanguageLearner 2.0</AssemblyName>
+    <ApplicationIcon>Communication.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Alvas.Audio, Version=6.0.3115.39935, Culture=neutral, PublicKeyToken=b0b8e5d43e21ecb6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\Alvas.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="CloudToolkitN6, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\CloudToolkitN6.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="MWCommon, Version=1.0.3.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\MWCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="MWControls, Version=1.0.3.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\MWControls.dll</HintPath>
+    </Reference>
+    <Reference Include="MWTreeView, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\MWTreeView.dll</HintPath>
+    </Reference>
+    <Reference Include="Owf.Controls.A1Panel, Version=1.0.3306.32627, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\Owf.Controls.A1Panel.dll</HintPath>
+    </Reference>
+    <Reference Include="RibbonControl, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\RibbonControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ScottWater.Boss, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\ScottWater.Boss.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Designer, Version=1.0.36.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\SQLite.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=2.0.38.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.2.2864.18696, Culture=neutral, PublicKeyToken=d481317c817cec47, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\components\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbortableThreadPool.cs" />
+    <Compile Include="Custom Controls\ImagePreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ImagePreviewControl.Designer.cs">
+      <DependentUpon>ImagePreviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsDictionary.cs">
+      <DependentUpon>dsDictionary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEditDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEditDictionary.Designer.cs">
+      <DependentUpon>AddEditDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CardControl.Designer.cs">
+      <DependentUpon>CardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardDragDropHolder.cs" />
+    <Compile Include="Custom Controls\CardListPlayList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CardListPlayList.Designer.cs">
+      <DependentUpon>CardListPlayList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CardSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CardSearchControl.Designer.cs">
+      <DependentUpon>CardSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CollectionTreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CollectionTreeControl.Designer.cs">
+      <DependentUpon>CollectionTreeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindImageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindImageDialog.Designer.cs">
+      <DependentUpon>FindImageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImportFromDBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImportFromDBForm.Designer.cs">
+      <DependentUpon>ImportFromDBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\GetImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\GetImageControl.Designer.cs">
+      <DependentUpon>GetImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Old References\Concept2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Old References\Concept2.Designer.cs">
+      <DependentUpon>Concept2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreateNewGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreateNewGroup.Designer.cs">
+      <DependentUpon>CreateNewGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsDictionary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDictionary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GetImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GetImages.Designer.cs">
+      <DependentUpon>GetImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GetImagesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GetImagesForm.Designer.cs">
+      <DependentUpon>GetImagesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GetStringDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GetStringDialog.Designer.cs">
+      <DependentUpon>GetStringDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Old References\Concept1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Old References\Concept1.Designer.cs">
+      <DependentUpon>Concept1.cs</DependentUpon>
+    </Compile>
+    <None Include="Old References\Old_MainForm_ref.cs">
+      <SubType>Form</SubType>
+    </None>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Custom Controls\ImagePreviewControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImagePreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEditDictionary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddEditDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CardControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CardListPlayList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardListPlayList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CardSearchControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\CollectionTreeControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CollectionTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindImageDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindImageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImportFromDBForm.resx">
+      <DependentUpon>ImportFromDBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\GetImageControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GetImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old References\Concept2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Concept2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateNewGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CreateNewGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GetImages.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GetImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GetImagesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GetImagesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GetStringDialog.resx">
+      <DependentUpon>GetStringDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Old References\Concept1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Concept1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChooseCardListsDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChooseCardListsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\RecentPlaylists.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RecentPlaylists.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\ChooseCardListsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseCardListsDialog.Designer.cs">
+      <DependentUpon>ChooseCardListsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\RecentPlaylists.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\RecentPlaylists.Designer.cs">
+      <DependentUpon>RecentPlaylists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebImage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AlvasAudio\Alvas.Forms.csproj">
+      <Project>{68F4BF0E-29F2-409E-A7EF-402D22FB0F60}</Project>
+      <Name>Alvas.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LanguageLearner.Data\LanguageLearner.Data.csproj">
+      <Project>{8129D24B-4349-42B3-890F-EDC10A2A3196}</Project>
+      <Name>LanguageLearner.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e-mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter_registration_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_to_program_s_website.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order_now.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_from_clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_%28delete%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="dsDictionary.xsc">
+      <DependentUpon>dsDictionary.xsd</DependentUpon>
+    </None>
+    <None Include="dsDictionary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDictionary.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDictionary.xss">
+      <DependentUpon>dsDictionary.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Communication.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

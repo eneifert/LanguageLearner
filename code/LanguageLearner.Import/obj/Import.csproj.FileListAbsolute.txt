@@ -1,0 +1,12 @@
+C:\Dev\LangLearner\code\Import\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\LangLearner\code\Import\obj\Debug\Import.Properties.Resources.resources
+C:\Dev\LangLearner\code\Import\obj\Debug\Import.csproj.GenerateResource.Cache
+C:\Dev\LangLearner\code\Import\obj\Debug\Import.ImportMainForm.resources
+C:\Dev\LangLearner\code\Import\bin\Debug\Import.exe
+C:\Dev\LangLearner\code\Import\bin\Debug\Import.pdb
+C:\Dev\LangLearner\code\Import\obj\Debug\Import.exe
+C:\Dev\LangLearner\code\Import\obj\Debug\Import.pdb
+C:\Dev\LangLearner\code\Import\bin\Debug\LangLearner.DB.dll
+C:\Dev\LangLearner\code\Import\bin\Debug\System.Data.SQLite.dll
+C:\Dev\LangLearner\code\Import\bin\Debug\System.Data.SQLite.xml
+C:\Dev\LangLearner\code\Import\bin\Debug\LangLearner.DB.pdb

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alvas.Forms", "AlvasAudio\Alvas.Forms.csproj", "{68F4BF0E-29F2-409E-A7EF-402D22FB0F60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageLearner.Data", "LanguageLearner.Data\LanguageLearner.Data.csproj", "{8129D24B-4349-42B3-890F-EDC10A2A3196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageLearner.UI", "LanguageLearner.Forms\LanguageLearner.UI.csproj", "{B3B34CA9-BDEE-46A4-B46E-7F96842B0066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageLearner.Import", "LanguageLearner.Import\LanguageLearner.Import.csproj", "{70FC5944-5AFB-439A-A6FA-D109BFAB0A67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68F4BF0E-29F2-409E-A7EF-402D22FB0F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F4BF0E-29F2-409E-A7EF-402D22FB0F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F4BF0E-29F2-409E-A7EF-402D22FB0F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F4BF0E-29F2-409E-A7EF-402D22FB0F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8129D24B-4349-42B3-890F-EDC10A2A3196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8129D24B-4349-42B3-890F-EDC10A2A3196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8129D24B-4349-42B3-890F-EDC10A2A3196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8129D24B-4349-42B3-890F-EDC10A2A3196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B34CA9-BDEE-46A4-B46E-7F96842B0066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B34CA9-BDEE-46A4-B46E-7F96842B0066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B34CA9-BDEE-46A4-B46E-7F96842B0066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B34CA9-BDEE-46A4-B46E-7F96842B0066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FC5944-5AFB-439A-A6FA-D109BFAB0A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FC5944-5AFB-439A-A6FA-D109BFAB0A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FC5944-5AFB-439A-A6FA-D109BFAB0A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FC5944-5AFB-439A-A6FA-D109BFAB0A67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

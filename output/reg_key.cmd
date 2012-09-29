@@ -1,0 +1,1 @@
+REG ADD HKLM\Software\Cragsoft\LanguageLearner /v location /d "C:\Dev\LanguageLearner_Remote\output"

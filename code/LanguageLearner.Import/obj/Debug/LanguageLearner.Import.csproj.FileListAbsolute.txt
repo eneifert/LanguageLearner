@@ -1,0 +1,8 @@
+C:\Dev\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.csprojResolveAssemblyReference.cache
+C:\Dev\LanguageLearner\code\LanguageLearner.Import\obj\Debug\Import.ImportMainForm.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.Properties.Resources.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.csproj.GenerateResource.Cache
+C:\Dev\LanguageLearner\output\LanguageLearner.Import.exe
+C:\Dev\LanguageLearner\output\LanguageLearner.Import.pdb
+C:\Dev\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.exe
+C:\Dev\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.pdb

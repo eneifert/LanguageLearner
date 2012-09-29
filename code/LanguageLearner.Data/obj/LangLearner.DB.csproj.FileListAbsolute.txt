@@ -1,0 +1,6 @@
+C:\Dev\LangLearner\output\LangLearner.DB.dll.config
+C:\Dev\LangLearner\output\LangLearner.DB.dll
+C:\Dev\LangLearner\output\LangLearner.DB.pdb
+C:\Dev\LangLearner\code\LangLearner.DB\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\LangLearner\code\LangLearner.DB\obj\Debug\LangLearner.DB.dll
+C:\Dev\LangLearner\code\LangLearner.DB\obj\Debug\LangLearner.DB.pdb

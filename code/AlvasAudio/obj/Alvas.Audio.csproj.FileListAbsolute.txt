@@ -1,0 +1,11 @@
+C:\Dev\LangLearner\code\AlvasAudio\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\LangLearner\code\AlvasAudio\obj\Debug\Alvas.Audio.ConvertPanel.resources
+C:\Dev\LangLearner\code\AlvasAudio\obj\Debug\Alvas.Audio.DictaphonePanel.resources
+C:\Dev\LangLearner\code\AlvasAudio\obj\Debug\Alvas.Audio.frmMain.resources
+C:\Dev\LangLearner\code\AlvasAudio\obj\Debug\AlvasAudio.Properties.Resources.resources
+C:\Dev\LangLearner\code\AlvasAudio\obj\Debug\Alvas.Audio.VoxPanel.resources
+C:\Dev\LangLearner\code\AlvasAudio\obj\Debug\Alvas.Audio.csproj.GenerateResource.Cache
+C:\Dev\LangLearner\output\AlvasAudio.exe
+C:\Dev\LangLearner\output\AlvasAudio.pdb
+C:\Dev\LangLearner\code\AlvasAudio\obj\Debug\AlvasAudio.exe
+C:\Dev\LangLearner\code\AlvasAudio\obj\Debug\AlvasAudio.pdb

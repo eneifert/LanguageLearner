@@ -1,0 +1,26 @@
+C:\Dev\LanguageLearner\output\LanguageLearner 2.0.exe.config
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner 2.0.exe
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner 2.0.pdb
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.csprojResolveAssemblyReference.cache
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.ImagePreviewControl.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.AddEditDictionary.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CardControl.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CardListPlayList.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CardSearchControl.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CollectionTreeControl.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.FindImageDialog.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.ImportFromDBForm.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.GetImageControl.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.Concept2.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CreateNewGroupDialog.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.GetImages.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.GetImagesForm.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.GetStringDialog.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.Concept1.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.MainForm.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.Properties.Resources.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.ChooseCardListsDialog.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.RecentPlaylists.resources
+C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.csproj.GenerateResource.Cache
+C:\Dev\LanguageLearner\output\LanguageLearner 2.0.exe
+C:\Dev\LanguageLearner\output\LanguageLearner 2.0.pdb
