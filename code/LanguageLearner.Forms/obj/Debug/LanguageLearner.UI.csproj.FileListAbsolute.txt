@@ -24,3 +24,29 @@ C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.R
 C:\Dev\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.csproj.GenerateResource.Cache
 C:\Dev\LanguageLearner\output\LanguageLearner 2.0.exe
 C:\Dev\LanguageLearner\output\LanguageLearner 2.0.pdb
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\LanguageLearner 2.0.exe.config
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\LanguageLearner 2.0.exe
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\LanguageLearner 2.0.pdb
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.ImagePreviewControl.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.AddEditDictionary.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CardControl.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CardListPlayList.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CardSearchControl.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CollectionTreeControl.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.FindImageDialog.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.ImportFromDBForm.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.GetImageControl.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.Concept2.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.CreateNewGroupDialog.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.GetImages.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.GetImagesForm.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.GetStringDialog.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.Concept1.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.MainForm.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.Properties.Resources.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.ChooseCardListsDialog.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.RecentPlaylists.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner.UI.csproj.GenerateResource.Cache
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner 2.0.exe
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Forms\obj\Debug\LanguageLearner 2.0.pdb

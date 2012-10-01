@@ -550,7 +550,7 @@ namespace LanguageLearner.Data {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class CardDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class CardDataTable : global::System.Data.TypedTableBase<CardRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -734,12 +734,6 @@ namespace LanguageLearner.Data {
             public CardRow FindByID(int ID) {
                 return ((CardRow)(this.Rows.Find(new object[] {
                             ID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -942,7 +936,7 @@ namespace LanguageLearner.Data {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class CardListDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class CardListDataTable : global::System.Data.TypedTableBase<CardListRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -1085,12 +1079,6 @@ namespace LanguageLearner.Data {
             public CardListRow FindByID(int ID) {
                 return ((CardListRow)(this.Rows.Find(new object[] {
                             ID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1271,7 +1259,7 @@ namespace LanguageLearner.Data {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class CardListDataDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class CardListDataDataTable : global::System.Data.TypedTableBase<CardListDataRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -1403,12 +1391,6 @@ namespace LanguageLearner.Data {
             public CardListDataRow FindByID(int ID) {
                 return ((CardListDataRow)(this.Rows.Find(new object[] {
                             ID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1584,7 +1566,7 @@ namespace LanguageLearner.Data {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class CollectionDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class CollectionDataTable : global::System.Data.TypedTableBase<CollectionRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -1724,12 +1706,6 @@ namespace LanguageLearner.Data {
             public CollectionRow FindByID(int ID) {
                 return ((CollectionRow)(this.Rows.Find(new object[] {
                             ID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1910,7 +1886,7 @@ namespace LanguageLearner.Data {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SoundClipDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class SoundClipDataTable : global::System.Data.TypedTableBase<SoundClipRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -2061,12 +2037,6 @@ namespace LanguageLearner.Data {
             public SoundClipRow FindByID(int ID) {
                 return ((SoundClipRow)(this.Rows.Find(new object[] {
                             ID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2252,7 +2222,7 @@ namespace LanguageLearner.Data {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DictionaryDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class DictionaryDataTable : global::System.Data.TypedTableBase<DictionaryRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -2374,12 +2344,6 @@ namespace LanguageLearner.Data {
                 rowDictionaryRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDictionaryRow);
                 return rowDictionaryRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2554,7 +2518,7 @@ namespace LanguageLearner.Data {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class RecentPlaylistDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class RecentPlaylistDataTable : global::System.Data.TypedTableBase<RecentPlaylistRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -2683,12 +2647,6 @@ namespace LanguageLearner.Data {
             public RecentPlaylistRow FindByID(int ID) {
                 return ((RecentPlaylistRow)(this.Rows.Find(new object[] {
                             ID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2865,7 +2823,7 @@ namespace LanguageLearner.Data {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class PictureDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class PictureDataTable : global::System.Data.TypedTableBase<PictureRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -3019,12 +2977,6 @@ namespace LanguageLearner.Data {
             public PictureRow FindByID(int ID) {
                 return ((PictureRow)(this.Rows.Find(new object[] {
                             ID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

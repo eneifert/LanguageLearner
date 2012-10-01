@@ -4,3 +4,9 @@ C:\Dev\LanguageLearner\output\LanguageLearner.Data.pdb
 C:\Dev\LanguageLearner\code\LanguageLearner.Data\obj\Debug\LanguageLearner.Data.dll
 C:\Dev\LanguageLearner\code\LanguageLearner.Data\obj\Debug\LanguageLearner.Data.pdb
 C:\Dev\LanguageLearner\code\LanguageLearner.Data\obj\Debug\LanguageLearner.Data.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\LanguageLearner.Data.dll.config
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\LanguageLearner.Data.dll
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\LanguageLearner.Data.pdb
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Data\obj\Debug\LanguageLearner.Data.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Data\obj\Debug\LanguageLearner.Data.dll
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Data\obj\Debug\LanguageLearner.Data.pdb

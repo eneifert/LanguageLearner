@@ -8,3 +8,14 @@ C:\Dev\LanguageLearner\code\AlvasAudio\obj\Debug\Alvas.Forms.VoxPanel.resources
 C:\Dev\LanguageLearner\code\AlvasAudio\obj\Debug\Alvas.Forms.csproj.GenerateResource.Cache
 C:\Dev\LanguageLearner\code\AlvasAudio\obj\Debug\AlvasAudio.exe
 C:\Dev\LanguageLearner\code\AlvasAudio\obj\Debug\AlvasAudio.pdb
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\AlvasAudio.exe.config
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\AlvasAudio.exe
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\AlvasAudio.pdb
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\AlvasAudio\obj\Debug\Alvas.Forms.ConvertPanel.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\AlvasAudio\obj\Debug\Alvas.Forms.DictaphonePanel.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\AlvasAudio\obj\Debug\Alvas.Forms.frmMain.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\AlvasAudio\obj\Debug\AlvasAudio.Properties.Resources.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\AlvasAudio\obj\Debug\Alvas.Forms.VoxPanel.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\AlvasAudio\obj\Debug\Alvas.Forms.csproj.GenerateResource.Cache
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\AlvasAudio\obj\Debug\AlvasAudio.exe
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\AlvasAudio\obj\Debug\AlvasAudio.pdb

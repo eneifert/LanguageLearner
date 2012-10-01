@@ -753,92 +753,92 @@ namespace LanguageLearner.Data
         public int ImportFromOldDB(string oldDBConString, bool importMarks)
         {
             int affectedRows = 0;
-            LangLearner.Data.LLSqlite oldSqlite = new LangLearner.Data.LLSqlite(oldDBConString);
-            LangLearner.Data.dsLanguageDB.CardListDataTable dtOldCardList = oldSqlite.GetCardLists();            
-            dsLanguageData dsNewData = new dsLanguageData();
-            int defaultCollectionID = getOrCreateDefaultImportCollectionID();
+            //LangLearner.Data.LLSqlite oldSqlite = new LangLearner.Data.LLSqlite(oldDBConString);
+            //LangLearner.Data.dsLanguageDB.CardListDataTable dtOldCardList = oldSqlite.GetCardLists();            
+            //dsLanguageData dsNewData = new dsLanguageData();
+            //int defaultCollectionID = getOrCreateDefaultImportCollectionID();
 
-            //Go through each old card list and add any missing cards
-            int progressIndex = 0;
-            foreach (LangLearner.Data.dsLanguageDB.CardListRow oldCardListRow in dtOldCardList)
-            {
-                progressIndex++;
+            ////Go through each old card list and add any missing cards
+            //int progressIndex = 0;
+            //foreach (LangLearner.Data.dsLanguageDB.CardListRow oldCardListRow in dtOldCardList)
+            //{
+            //    progressIndex++;
 
-                //First if the Card list is not in the new DB. Add it.
-                if (daCardList.GetDataByName(oldCardListRow.Name.Trim()).Rows.Count < 1)
-                {
-                    affectedRows = daCardList.Insert(getNewIdForTable(dsNewData.CardList.TableName), defaultCollectionID, oldCardListRow.Name, DateTime.Now, DateTime.Now);
+            //    //First if the Card list is not in the new DB. Add it.
+            //    if (daCardList.GetDataByName(oldCardListRow.Name.Trim()).Rows.Count < 1)
+            //    {
+            //        affectedRows = daCardList.Insert(getNewIdForTable(dsNewData.CardList.TableName), defaultCollectionID, oldCardListRow.Name, DateTime.Now, DateTime.Now);
 
-                    if (affectedRows < 1)
-                    {
-                        DataImported(new DataImportedEventArgs(false, string.Format("Could not create CardList: {0}", oldCardListRow.Name), progressIndex, dtOldCardList.Rows.Count));
-                        continue;
-                    }
-                    else
-                    {
-                        DataImported(new DataImportedEventArgs(true, string.Format("Added CardList: {0}", oldCardListRow.Name), progressIndex, dtOldCardList.Rows.Count));
-                    }
-                }
-                else
-                {
-                    DataImported(new DataImportedEventArgs(true, string.Format("CardList already exists: {0}. Checking for new cards...", oldCardListRow.Name), progressIndex, dtOldCardList.Rows.Count));
-                }
+            //        if (affectedRows < 1)
+            //        {
+            //            DataImported(new DataImportedEventArgs(false, string.Format("Could not create CardList: {0}", oldCardListRow.Name), progressIndex, dtOldCardList.Rows.Count));
+            //            continue;
+            //        }
+            //        else
+            //        {
+            //            DataImported(new DataImportedEventArgs(true, string.Format("Added CardList: {0}", oldCardListRow.Name), progressIndex, dtOldCardList.Rows.Count));
+            //        }
+            //    }
+            //    else
+            //    {
+            //        DataImported(new DataImportedEventArgs(true, string.Format("CardList already exists: {0}. Checking for new cards...", oldCardListRow.Name), progressIndex, dtOldCardList.Rows.Count));
+            //    }
                                
-                int cardListID = (int)daCardList.ScalarQueryGetIDByName(oldCardListRow.Name.Trim());
+            //    int cardListID = (int)daCardList.ScalarQueryGetIDByName(oldCardListRow.Name.Trim());
 
-                //Get the old cards that were in this playlist
-                List<string> oldCardListGuid = new List<string>();
-                oldCardListGuid.Add(oldCardListRow.Guid);
-                LangLearner.Data.dsLanguageDB.CardDataTable dtOldCards = oldSqlite.GetCardsInLists(oldCardListGuid);
+            //    //Get the old cards that were in this playlist
+            //    List<string> oldCardListGuid = new List<string>();
+            //    oldCardListGuid.Add(oldCardListRow.Guid);
+            //    LangLearner.Data.dsLanguageDB.CardDataTable dtOldCards = oldSqlite.GetCardsInLists(oldCardListGuid);
 
-                //Now import the cards
-                foreach (LangLearner.Data.dsLanguageDB.CardRow oldCardRow in dtOldCards)
-                {
-                    //Insert new cards if they don't exists                                        
-                    dsLanguageData.CardDataTable dtNewCard = daCard.GetDataByCardInfo(oldCardRow.Question, oldCardRow.Answer);                    
-                    if (dtNewCard.Rows.Count < 1)
-                    {
-                        bool markForReview = false;
-                        int difficulty = 1;
+            //    //Now import the cards
+            //    foreach (LangLearner.Data.dsLanguageDB.CardRow oldCardRow in dtOldCards)
+            //    {
+            //        //Insert new cards if they don't exists                                        
+            //        dsLanguageData.CardDataTable dtNewCard = daCard.GetDataByCardInfo(oldCardRow.Question, oldCardRow.Answer);                    
+            //        if (dtNewCard.Rows.Count < 1)
+            //        {
+            //            bool markForReview = false;
+            //            int difficulty = 1;
                         
-                        if (importMarks)
-                        {
-                            markForReview = oldCardRow.IsMarkedForReview;
-                            if (oldCardRow.IsEasy)
-                                difficulty = 0;
-                        }
+            //            if (importMarks)
+            //            {
+            //                markForReview = oldCardRow.IsMarkedForReview;
+            //                if (oldCardRow.IsEasy)
+            //                    difficulty = 0;
+            //            }
 
-                        affectedRows += daCard.Insert(getNewIdForTable(new dsLanguageData.CardDataTable().TableName), oldCardRow.Question, oldCardRow.Answer, oldCardRow.Example, oldCardRow.Count, oldCardRow.DateCreated, DateTime.Now, markForReview, difficulty);
-                        //TODO error handling
-                    }
+            //            affectedRows += daCard.Insert(getNewIdForTable(new dsLanguageData.CardDataTable().TableName), oldCardRow.Question, oldCardRow.Answer, oldCardRow.Example, oldCardRow.Count, oldCardRow.DateCreated, DateTime.Now, markForReview, difficulty);
+            //            //TODO error handling
+            //        }
 
-                    int cardID = daCard.GetDataByCardInfo(oldCardRow.Question, oldCardRow.Answer)[0].ID;                                                         
+            //        int cardID = daCard.GetDataByCardInfo(oldCardRow.Question, oldCardRow.Answer)[0].ID;                                                         
 
-                    //Check for and import the associated SoundClip
-                    if (oldCardRow.SoundFileGuid != null && oldCardRow.SoundFileGuid != Guid.Empty.ToString())
-                    {
-                        dsLanguageData.SoundClipDataTable dtSoundClip = daSoundClip.GetDataByCardID(cardID);
-                        if (dtSoundClip.Rows.Count < 1)
-                        {
-                            //Convert the old sound row in put in the new one
-                            LangLearner.Data.dsLanguageDB.SoundFileRow oldSoundRow = oldSqlite.GetSoundFile(oldCardRow.SoundFileGuid);
-                            MemoryStream clipStream = streamFromString(oldSoundRow.SoundFile);
+            //        //Check for and import the associated SoundClip
+            //        if (oldCardRow.SoundFileGuid != null && oldCardRow.SoundFileGuid != Guid.Empty.ToString())
+            //        {
+            //            dsLanguageData.SoundClipDataTable dtSoundClip = daSoundClip.GetDataByCardID(cardID);
+            //            if (dtSoundClip.Rows.Count < 1)
+            //            {
+            //                //Convert the old sound row in put in the new one
+            //                LangLearner.Data.dsLanguageDB.SoundFileRow oldSoundRow = oldSqlite.GetSoundFile(oldCardRow.SoundFileGuid);
+            //                MemoryStream clipStream = streamFromString(oldSoundRow.SoundFile);
 
-                            affectedRows += daSoundClip.Insert(getNewIdForTable(new dsLanguageData.SoundClipDataTable().TableName), oldSoundRow.Name, clipStream.ToArray(), oldSoundRow.DateCreated, DateTime.Now, cardID);
-                            //TODO error handling
-                        }
-                    }                    
+            //                affectedRows += daSoundClip.Insert(getNewIdForTable(new dsLanguageData.SoundClipDataTable().TableName), oldSoundRow.Name, clipStream.ToArray(), oldSoundRow.DateCreated, DateTime.Now, cardID);
+            //                //TODO error handling
+            //            }
+            //        }                    
 
-                    //Make sure the card is added to the current playlist
-                    dsLanguageData.CardListDataDataTable dtCardListData = daCardListData.GetDataByIDs(cardListID, cardID);
-                    if (dtCardListData.Rows.Count < 1)
-                    {
-                        //TODO make CardListData insert, edit position methods
-                        affectedRows += daCardListData.Insert(getNewIdForTable(new dsLanguageData.CardListDataDataTable().TableName), cardListID, cardID, getNewCardListDataIndex(cardListID));
-                        //TODO error handling
-                    }
-                }
-            }
+            //        //Make sure the card is added to the current playlist
+            //        dsLanguageData.CardListDataDataTable dtCardListData = daCardListData.GetDataByIDs(cardListID, cardID);
+            //        if (dtCardListData.Rows.Count < 1)
+            //        {
+            //            //TODO make CardListData insert, edit position methods
+            //            affectedRows += daCardListData.Insert(getNewIdForTable(new dsLanguageData.CardListDataDataTable().TableName), cardListID, cardID, getNewCardListDataIndex(cardListID));
+            //            //TODO error handling
+            //        }
+            //    }
+            //}
 
             return affectedRows;
         }

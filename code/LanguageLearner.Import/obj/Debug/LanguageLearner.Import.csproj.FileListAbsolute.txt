@@ -6,3 +6,12 @@ C:\Dev\LanguageLearner\output\LanguageLearner.Import.exe
 C:\Dev\LanguageLearner\output\LanguageLearner.Import.pdb
 C:\Dev\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.exe
 C:\Dev\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.pdb
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\LanguageLearner.Import.exe.config
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\LanguageLearner.Import.exe
+C:\Users\Eric\Documents\GitHub\LanguageLearner\output\LanguageLearner.Import.pdb
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Import\obj\Debug\Import.ImportMainForm.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.Properties.Resources.resources
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.csproj.GenerateResource.Cache
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.exe
+C:\Users\Eric\Documents\GitHub\LanguageLearner\code\LanguageLearner.Import\obj\Debug\LanguageLearner.Import.pdb
